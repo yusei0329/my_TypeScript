@@ -1,22 +1,22 @@
 "use strict";
-var hasValue = true;
-var count = 10;
-var float = 3.14;
-var negative = -0.12;
-var single = 'hello';
-var double = "hello";
-var back = "hello";
-var hello;
+let hasValue = true;
+let count = 10;
+let float = 3.14;
+let negative = -0.12;
+let single = 'hello';
+let double = "hello";
+let back = `hello`;
+let hello;
 hello = 'hello';
-var person = {
+const person = {
     name: {
         first: 'Jack',
         last: 'Smith'
     },
     age: 21
 };
-var fruits = ['Apple', 'Banana', 'Grape'];
-var book = ['business', 1500, false];
+const fruits = ['Apple', 'Banana', 'Grape'];
+const book = ['business', 1500, false];
 var CoffeeSize;
 (function (CoffeeSize) {
     CoffeeSize[CoffeeSize["SHORT"] = 0] = "SHORT";
@@ -24,23 +24,23 @@ var CoffeeSize;
     CoffeeSize[CoffeeSize["GRANDE"] = 1] = "GRANDE";
     CoffeeSize[CoffeeSize["VENTI"] = 2] = "VENTI";
 })(CoffeeSize || (CoffeeSize = {}));
-var coffee = {
+const coffee = {
     hot: true,
     size: CoffeeSize.TALL
 };
 coffee.size = CoffeeSize.SHORT;
-var anything = true;
+let anything = true;
 anything = 'hello';
 anything = ['hello', 33, true];
 anything = {};
 anything.fjiafjaj = 'faijfi';
-var banana = 'banana';
+let banana = 'banana';
 banana = anything;
-var unionType = 10;
-var unionTypes = [21, 'hello'];
-var apple = 'apple';
-var clothSize = 'large';
-var cloth = {
+let unionType = 10;
+let unionTypes = [21, 'hello'];
+const apple = 'apple';
+let clothSize = 'large';
+const cloth = {
     color: 'white',
     size: 'medium'
 };
@@ -51,21 +51,21 @@ function sayHello() {
     // console.log('Hello!');
 }
 // console.log(sayHello());
-var tmp;
-var anotherAdd = function (num1, num2) {
+let tmp;
+const anotherAdd = function (num1, num2) {
     return num1 + num2;
 };
-var doubleNumber = function (num) { return num * 2; };
+const doubleNumber = num => num * 2;
 function doubleAndHandle(num, cb) {
-    var doubleNum = cb(num * 2);
+    const doubleNum = cb(num * 2);
     // console.log(doubleNum);
 }
-doubleAndHandle(21, function (doubleNum) {
+doubleAndHandle(21, doubleNum => {
     return doubleNum;
 });
-var unknownInput;
-var anyInput;
-var text;
+let unknownInput;
+let anyInput;
+let text;
 unknownInput = 'hello';
 unknownInput = 21;
 unknownInput = true;

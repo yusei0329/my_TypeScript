@@ -19,12 +19,15 @@ class Person {
 // quill.greeting();
 
 class Teacher extends Person {
-    constructor(name: string, age: number, public subject: string) {
+    get subject() {
+        return 'Music';
+    }
+    constructor(name: string, age: number, private _subject: string) {
         super(name, age);
     }
 
     greeting() {
-        console.log(`Hello! My name is ${this.name}. I am ${this.age} years old. I teach ${this.subject}`);
+        console.log(`Hello! My name is ${this.name}. I am ${this.age} years old. I teach ${this._subject}`);
     }  
 }
 
